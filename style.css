@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border{
+    border-top: 2px solid black;
+    width:65rem;
+    position: relative;
+}
+.upper-part{
+    background-color:rgb(237, 156, 15);
+    height: 25rem;
+}
+.upper-part h1{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 3rem;
+    font-family:sans-serif;
+    letter-spacing: 2px;
+}
+.bottom-part{
+    height: 8rem;
+    background-color: red;
+}
+.triangle{
+    width:0;
+    height: 0;
+    border-top:100px solid rgb(237, 156, 15);
+    border-left:250px solid transparent;
+    border-right: 250px solid transparent;
+    position: absolute;
+    top:66%;
+    left:50%;
+    transform: translate(-50%,0%);
+}
+
+/* face of emogi */
+.face{
+    position: absolute;
+    top : 35%;
+    height: 6rem;
+    width : 6rem;
+    background-color: rgba(0, 0, 0, 0.505);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eyes .left-eye, .eyes .right-eye{
+    height: 0.4rem;
+    width : 0.4rem;
+    background-color: rgba(0, 0, 0, 0.585);
+    margin: 10px;
+}
+.lips{
+    width: 3rem;
+    height: 3rem;
+    border:2px solid transparent;
+    border-right: 6px solid rgba(0, 0, 0, 0.585);
+    border-radius: 50%;
+    margin-left:-35px;
+}
